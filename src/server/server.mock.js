@@ -1,7 +1,3 @@
-/**
- * This mock server does not communicate with the DB and therefore does not provide data persistence.
- */
-
 import express from 'express';
 import cors from 'cors';
 import bodyParser from 'body-parser';

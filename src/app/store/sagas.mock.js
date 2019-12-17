@@ -5,11 +5,6 @@ import uuid from 'uuid';
 import {  }from 'react-router'
 import { history } from './history';
 
-/**
- * Reducers cannot have any randomness (the must be deterministic)
- * Since the action of creating a task involves generating a random ID, it is not pure.
- * When the response to an action is not deterministic in a Redux application, both Sagas and Thunks are appropriate.
- */
 export function* taskCreationSaga(){
     while (true){
         const {groupID} = yield take(mutations.REQUEST_TASK_CREATION);
